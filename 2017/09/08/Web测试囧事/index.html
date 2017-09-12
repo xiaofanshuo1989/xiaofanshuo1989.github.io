@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="小凡说">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img1.doubanio.com/lpic/s29525049.jpg">
-<meta property="og:updated_time" content="2017-09-08T13:44:18.000Z">
+<meta property="og:updated_time" content="2017-09-12T08:48:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web测试囧事">
 <meta name="twitter:image" content="https://img1.doubanio.com/lpic/s29525049.jpg">
@@ -394,6 +394,14 @@
 </ul>
 <p><strong>每当一段JS脚本下载后，都会立刻执行该文件。因此两个JS请求并不是无缝连接的，而是隔了一段执行时间</strong></p>
 <h2 id="重复验证button"><a href="#重复验证button" class="headerlink" title="重复验证button"></a>重复验证button</h2><p>我们经常需要验证一个button的功能，如跳转，如提交表格等，当点击一次以后，在页面刷新之前应该进行多次点击以确保该按钮没有重复提交功能</p>
+<h2 id="浏览器内核"><a href="#浏览器内核" class="headerlink" title="浏览器内核"></a>浏览器内核</h2><p>几种主流浏览器的内核</p>
+<ul>
+<li>Firefox：Gecko</li>
+<li>Chrome：WebKit</li>
+<li>Safari：WebKit</li>
+<li>IE9-11：Trident</li>
+</ul>
+<p><strong>注意的是，Firefox的Gecko和Webkit相差很小，可以认为相同<br>IE EDGE已经可以兼容webkit，所以和其他浏览器差别不大了</strong></p>
 
       
     </div>
@@ -567,7 +575,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#web测试囧事"><span class="nav-number">1.</span> <span class="nav-text">web测试囧事</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试输入框的边界"><span class="nav-number">1.1.</span> <span class="nav-text">测试输入框的边界</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二分输入法"><span class="nav-number">1.1.1.</span> <span class="nav-text">二分输入法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边界值法"><span class="nav-number">1.1.2.</span> <span class="nav-text">边界值法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试实践"><span class="nav-number">1.1.3.</span> <span class="nav-text">测试实践</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#虎扑论坛-马刺分论坛"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">虎扑论坛-马刺分论坛</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试web能否正常提供JSON"><span class="nav-number">1.2.</span> <span class="nav-text">测试web能否正常提供JSON</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL注入"><span class="nav-number">1.2.1.</span> <span class="nav-text">SQL注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试目标-保证返回的JSON正确"><span class="nav-number">1.2.2.</span> <span class="nav-text">测试目标-保证返回的JSON正确</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-的加载"><span class="nav-number">1.3.</span> <span class="nav-text">JavaScript 的加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复验证button"><span class="nav-number">1.4.</span> <span class="nav-text">重复验证button</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#web测试囧事"><span class="nav-number">1.</span> <span class="nav-text">web测试囧事</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试输入框的边界"><span class="nav-number">1.1.</span> <span class="nav-text">测试输入框的边界</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二分输入法"><span class="nav-number">1.1.1.</span> <span class="nav-text">二分输入法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边界值法"><span class="nav-number">1.1.2.</span> <span class="nav-text">边界值法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试实践"><span class="nav-number">1.1.3.</span> <span class="nav-text">测试实践</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#虎扑论坛-马刺分论坛"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">虎扑论坛-马刺分论坛</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试web能否正常提供JSON"><span class="nav-number">1.2.</span> <span class="nav-text">测试web能否正常提供JSON</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL注入"><span class="nav-number">1.2.1.</span> <span class="nav-text">SQL注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试目标-保证返回的JSON正确"><span class="nav-number">1.2.2.</span> <span class="nav-text">测试目标-保证返回的JSON正确</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript-的加载"><span class="nav-number">1.3.</span> <span class="nav-text">JavaScript 的加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重复验证button"><span class="nav-number">1.4.</span> <span class="nav-text">重复验证button</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器内核"><span class="nav-number">1.5.</span> <span class="nav-text">浏览器内核</span></a></li></ol></li></ol></div>
             
 
           </div>
